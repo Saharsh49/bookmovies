@@ -13,6 +13,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatSelectModule} from '@angular/material/select';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,6 +21,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
+import { AddmoviesComponent } from './addmovies/addmovies.component';
+import { AddtheatreComponent } from './addtheatre/addtheatre.component';
 
 
 @NgModule({
@@ -28,7 +31,9 @@ import { HomeComponent } from './home/home.component';
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
-    HomeComponent
+    HomeComponent,
+    AddmoviesComponent,
+    AddtheatreComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,8 @@ import { HomeComponent } from './home/home.component';
     MatCheckboxModule,
     MatInputModule,
     FlexLayoutModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatSelectModule
     
   ],
   providers: [],
