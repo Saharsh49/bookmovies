@@ -14,6 +14,9 @@ import {MatInputModule} from '@angular/material/input';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSelectModule} from '@angular/material/select';
+import {MatChipsModule} from '@angular/material/chips';
+import {CdkAccordionModule} from '@angular/cdk/accordion';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,6 +26,7 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { AddmoviesComponent } from './addmovies/addmovies.component';
 import { AddtheatreComponent } from './addtheatre/addtheatre.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 
 
 @NgModule({
@@ -33,7 +37,8 @@ import { AddtheatreComponent } from './addtheatre/addtheatre.component';
     RegisterComponent,
     HomeComponent,
     AddmoviesComponent,
-    AddtheatreComponent
+    AddtheatreComponent,
+    MovieDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +54,10 @@ import { AddtheatreComponent } from './addtheatre/addtheatre.component';
     MatInputModule,
     FlexLayoutModule,
     MatSidenavModule,
-    MatSelectModule
+    MatSelectModule,
+    MatChipsModule,
+    CdkAccordionModule,
+    MatExpansionModule
     
   ],
   providers: [],
