@@ -1,6 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule, MatRippleModule } from '@angular/material/core';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -17,6 +21,11 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatChipsModule} from '@angular/material/chips';
 import {CdkAccordionModule} from '@angular/cdk/accordion';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatListModule} from '@angular/material/list';
+
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,6 +36,9 @@ import { HomeComponent } from './home/home.component';
 import { AddmoviesComponent } from './addmovies/addmovies.component';
 import { AddtheatreComponent } from './addtheatre/addtheatre.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { SeatbookingComponent } from './seatbooking/seatbooking.component';
+import { PaymentComponent } from './payment/payment.component';
+import { BookingCompleteComponent } from './booking-complete/booking-complete.component';
 
 
 @NgModule({
@@ -38,13 +50,17 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     HomeComponent,
     AddmoviesComponent,
     AddtheatreComponent,
-    MovieDetailComponent
+    MovieDetailComponent,
+    SeatbookingComponent,
+    PaymentComponent,
+    BookingCompleteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
@@ -57,7 +73,13 @@ import { MovieDetailComponent } from './movie-detail/movie-detail.component';
     MatSelectModule,
     MatChipsModule,
     CdkAccordionModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatRippleModule,
+    MatDividerModule,
+    MatPaginatorModule,
+    MatListModule
     
   ],
   providers: [],

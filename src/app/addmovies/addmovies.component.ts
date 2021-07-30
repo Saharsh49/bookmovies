@@ -6,7 +6,6 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./addmovies.component.css']
 })
 export class AddmoviesComponent implements OnInit {
-
  
 
   constructor() { }
